@@ -13,11 +13,10 @@ import { usePathname } from "next/navigation";
 const Navbar = () => {
   const pathname = usePathname();
   return (
-    <div className="bg-gray-900">
       <header>
-        <div className="max-w-screen-xl px-4 py-3 mx-auto">
-          <div className="flex flex-row items-center ">
-            <button className="mr-6">
+        <div className="max-w-screen-xl px-4 py-3 mx-auto bg-gray-900">
+          <div className="flex flex-row items-center gap-6">
+            <button>
               <MenuIcon
                 sx={{
                   width: 48,
@@ -26,7 +25,7 @@ const Navbar = () => {
                 }}
               />
             </button>
-            <Link href="/" className="mr-6">
+            <Link href="/">
               <Image
                 src={navLogo}
                 alt="logo"
@@ -46,7 +45,6 @@ const Navbar = () => {
           </div>
         </div>
       </header>
-    </div>
   );
 };
 
