@@ -14,8 +14,13 @@ const Navbar = () => {
   const pathname = usePathname();
   return (
       <header>
-        <div className="max-w-screen-xl px-4 py-3 mx-auto bg-gray-900">
-          <div className="flex flex-row items-center gap-6">
+        <div style={{
+          padding: '16px 8px',
+          backgroundColor: '#262626'
+        }} className="max-w-screen-xl px-4 py-2 mx-auto bg-gray-900">
+          <div style={{
+            gap: '24px'
+          }} className="flex flex-row items-center gap-6">
             <button>
               <MenuIcon
                 sx={{

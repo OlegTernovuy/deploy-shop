@@ -13,9 +13,7 @@ const SearchField = () => {
       backgroundColor: "white",
       borderRadius: "4px",
       width: '100%',
-      marginRight: '24px',
     }}
-    // className="text-white"
     InputProps={{
       endAdornment: (
         <button>
