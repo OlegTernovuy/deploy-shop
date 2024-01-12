@@ -6,7 +6,6 @@ import navLogo from '../../../public/navLogo.svg'
 import Link from "next/link";
 import Image from "next/image";
 
-import SearchField from "@/components/layout/header/SearchField";
 
 const page = () => {
 
@@ -32,7 +31,6 @@ const page = () => {
           className="max-w-[30px] "
         />
       </Link>
-      <SearchField />
       <Link href={`?shopCard=true`}>
         <ShoppingCartOutlinedIcon fontSize="large" className="text-white" />
       </Link>

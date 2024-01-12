@@ -6,11 +6,34 @@ import navLogo from "../../../../public/navLogo.svg";
 
 import Link from "next/link";
 import Image from "next/image";
-
-import style from "./style.module.css";
+import SearchIcon from "@mui/icons-material/Search";
 
 import { usePathname } from "next/navigation";
-import SearchField from "./SearchField";
+import { TextField } from "@mui/material";
+
+const SearchField = () => {
+  return (
+    <TextField
+    type="search"
+    variant="outlined"
+    size="small"
+    sx={{
+      border: "none",
+      "& fieldset": { border: "none" },
+      backgroundColor: "white",
+      borderRadius: "4px",
+      width: '100%',
+    }}
+    InputProps={{
+      endAdornment: (
+        <button>
+          <SearchIcon className="text-bgDark" fontSize="medium" />
+        </button>
+      ),
+    }}
+  />
+  )
+}
 
 const Navbar = () => {
   const pathname = usePathname();

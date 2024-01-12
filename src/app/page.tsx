@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 import MainBaner from "../../public/MainBaner.svg";
 import Link from "next/link";
-import MainButton from "@/components/ui/MainButton/MainButton";
+import MainButton from "@/components/ui/mainButton";
 
 export default function Home() {
   return (
