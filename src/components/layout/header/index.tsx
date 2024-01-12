@@ -1,15 +1,19 @@
+"use client";
 
 import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
 import MenuIcon from "@mui/icons-material/Menu";
-import navLogo from '../../../public/navLogo.svg'
+import navLogo from "../../../../public/navLogo.svg";
 
 import Link from "next/link";
 import Image from "next/image";
 
-import SearchField from "@/components/layout/header/SearchField";
+import style from "./style.module.css";
 
-const page = () => {
+import { usePathname } from "next/navigation";
+import SearchField from "./SearchField";
 
+const Navbar = () => {
+  const pathname = usePathname();
   return (
     <header className="bg-[#262626]">
       <div className="flex justify-between gap-6 items-center px-4 py-2 mx-auto max-w-screen-2xl">
@@ -41,4 +45,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Navbar;
