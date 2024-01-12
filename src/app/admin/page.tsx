@@ -1,4 +1,3 @@
-'use client'
 
 import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
 import MenuIcon from "@mui/icons-material/Menu";
@@ -7,24 +6,14 @@ import navLogo from '../../../public/navLogo.svg'
 import Link from "next/link";
 import Image from "next/image";
 
-import { usePathname } from "next/navigation";
-import { useState } from "react";
 import SearchField from "@/Components/layout/header/SearchField";
 
 const page = () => {
 
-  const [nav, setNav] = useState(false);
-
-  const handleNav = () => {
-    setNav(!nav);
-  };
-
-  const pathname = usePathname();
-
   return (
     <header className="bg-[#262626]">
       <div className="flex justify-between gap-6 items-center px-4 py-2 mx-auto max-w-screen-2xl">
-      <button onClick={handleNav}>
+      <button>
         <MenuIcon
           sx={{
             width: 48,
@@ -44,7 +33,7 @@ const page = () => {
         />
       </Link>
       <SearchField />
-      <Link href={`${pathname}?shopCard=true`}>
+      <Link href={`?shopCard=true`}>
         <ShoppingCartOutlinedIcon fontSize="large" className="text-white" />
       </Link>
       </div>
