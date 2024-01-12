@@ -3,8 +3,8 @@ import { Roboto } from "next/font/google";
 import "./globals.css";
 import ModalWrapper from "@/components/ui/modal/ModalWrapper";
 import ShoppingCard from "@/components/ui/modal/ShoppingCard";
-import Navbar from "@/components/layout/header/Navbar";
 import Catalog from "@/components/ui/modal/Catalog";
+import Navbar from "@/components/layout/header/Navbar";
 
 const roboto = Roboto({ weight: "400", subsets: ["latin"] });
 
