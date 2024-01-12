@@ -113,7 +113,7 @@ export default function Home() {
     //     </a>
     //   </div>
     // </main>
-    <main className='flex min-h-screen max-w-screen-xl flex-col mx-auto'>
+    <div className='flex min-h-screen max-w-screen-xl flex-col mx-auto'>
       <div className="mb-4">
         <Image
           src={MainBaner}
@@ -128,6 +128,6 @@ export default function Home() {
           <MainButton />
         </Link>
       </section>
-    </main>
+    </div>
   )
 }

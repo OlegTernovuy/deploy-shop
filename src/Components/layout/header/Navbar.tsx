@@ -15,9 +15,9 @@ import { usePathname } from "next/navigation";
 const Navbar = () => {
   const pathname = usePathname();
   return (
-    <header>
-      <div className={style.header}>
-        <div className={style.headerWrapper}>
+    <header className="bg-black fixed w-full top-0 left-0 ">
+      <div className='max-w-screen-xl flex flex-wrap items-center justify-between mx-auto px-4 py-2'>
+        {/* <div className={style.headerWrapper}> */}
           <button>
             <MenuIcon
               sx={{
@@ -45,7 +45,7 @@ const Navbar = () => {
             />
           </Link>
         </div>
-      </div>
+      {/* </div> */}
     </header>
   );
 };
