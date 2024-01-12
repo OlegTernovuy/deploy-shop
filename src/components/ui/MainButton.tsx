@@ -2,7 +2,7 @@ import Image from "next/image";
 
 import Button from "@mui/material/Button";
 
-import buttonIcon from "../../../../public/buttonIcon.svg";
+import buttonIcon from "../../../public/buttonIcon.svg";
 
 const MainButton = () => {
   return (
