@@ -2,7 +2,7 @@
 
 import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
 import MenuIcon from "@mui/icons-material/Menu";
-import navLogo from "../../../../public/navLogo.svg";
+import navLogo from '../../../public/navLogo.svg'
 
 import Link from "next/link";
 import Image from "next/image";
